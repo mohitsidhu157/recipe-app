@@ -1,30 +1,18 @@
 import React from 'react';
 
-import logo from './logo.svg';
 import './App.css';
-
-class App extends React.Component {
-  
-  render(){
-    return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const  firebase = require('firebase');
+function App () {
+    const APP_ID = '8dd921db';
+    const APP_KEY = '17c31add41ba209f2afe8e957b511fc9';
+    const exampleReq = 
+    `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
+      return (
+      <div className="App">
+      Hello world
+      </div>
+    );
+ 
 }
 
 export default App;
