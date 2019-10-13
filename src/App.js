@@ -6,7 +6,7 @@ function App () {
     const APP_ID = '8dd921db';
     const APP_KEY = '17c31add41ba209f2afe8e957b511fc9';
     const [recipes, setRecipes]  = useState([]);
-    const [search,setSearch] = useState('banana'); 
+    const [search,setSearch] = useState(''); 
     const [query, setQuery] = useState("");
     useEffect(()=>{
       getRecipe();
@@ -33,6 +33,7 @@ function App () {
           <input type="text" className="search-bar" value={search} onChange={updateSearch}/>
           <button type="submit" className="search-button">Search</button>
         </form>
+        <div className="Recipes">
         {recipes.map((recipe,index)=>{
           return <Recipe 
                     key={index} 
@@ -42,6 +43,8 @@ function App () {
                     ingredients={recipe.recipe.ingredients}
                  />;
         })}
+        </div>
+
       </div>
     );
  

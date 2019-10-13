@@ -20,8 +20,9 @@
   padding : 10px 20px;
   color : white
 }
-.recipes{
+.Recipes{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex : 3
 }

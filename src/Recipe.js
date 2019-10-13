@@ -7,7 +7,7 @@ const Recipe = (props) => {
             <ol>
                 {props.ingredients.map(ingredient=><li>{ingredient.text}</li>)}
             </ol>
-            <p>{props.calories}</p>
+            <p>{props.calories.toFixed(2)}</p>
             <img src={props.image} alt="" className={style.image}/>
         </div>
     );
