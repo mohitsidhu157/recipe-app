@@ -1,39 +1,27 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.App{
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  min-height : 100vh
 }
-#evernote-container {
-  height: 100%;
-  box-sizing: border-box;
+.search-form{
+  min-height: 10vh;
+  display : flex;
+  justify-content: center;
+  align-items: center
 }
-.app-container {
-  height: 100%;
-  box-sizing: border-box;
+.search-bar{
+  width: 50%;
+  border: none;
+  padding : 10px;
+
 }
-.quill {
-  height: 100%;
-  box-sizing: border-box;
-  width: calc(100% - 300px);
-  float: left;
+.search-button{
+  background : lightcoral;
+  border : none;
+  padding : 10px 20px;
+  color : white
 }
-.ql-container {
-  box-sizing: border-box;
-  height: calc(100% - 42px);
-  overflow-y: scroll;
-}
-.ql-editor {
-  cursor: text;
-}
-.MuiListItem-root.Mui-selected {
-  background-color: #d4d8e8 !important;
-}
-.no-note-selected {
-  font-size: 48px;
-  position: absolute;
-  top: 50px;
-  left: calc(50% - 165px);
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
